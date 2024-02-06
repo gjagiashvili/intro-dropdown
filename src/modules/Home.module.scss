@@ -1,0 +1,190 @@
+.home {
+  margin: auto;
+  padding: 32px 144px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.right img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1275px) {
+  .home {
+    padding: 32px 112px;
+  }
+
+  .left h1 {
+    font-size: 60px;
+  }
+
+  .left p {
+    width: 100%;
+  }
+
+  .learn-more-button {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .right {
+    grid-row: 1;
+  }
+
+  .learn-more-button {
+    padding: 16px;
+    width: 30%;
+    border: none;
+    outline: none;
+    background-color: black;
+    border-radius: 15px;
+  }
+
+  .home {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 16px 0;
+  }
+
+  .left {
+    text-align: center;
+    align-items: center;
+  }
+
+  .left h1 {
+    font-size: 35px;
+  }
+
+  .left h1 br {
+    display: none;
+  }
+
+  .left p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .companies {
+    bottom: -57%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    padding: 16px;
+  }
+}
+
+.left {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 48px;
+  position: relative;
+}
+
+.left h1 {
+  color: black;
+  font-size: 70px;
+}
+
+.left p {
+  color: gray;
+  font-size: 18px;
+  width: 90%;
+  line-height: 1.5;
+}
+
+.companies {
+  position: absolute;
+  bottom: -37%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px; /* Changed from 2rem to 32px */
+}
+
+@media screen and (max-width: 887px) {
+  .left h1 {
+    font-size: 40px;
+  }
+
+  .companies {
+    bottom: -23%;
+  }
+
+  .left p {
+    font-size: 15px;
+  }
+
+  .left {
+    gap: 24px; /* Changed from 1.5rem to 24px */
+  }
+}
+
+@media screen and (max-width: 827px) {
+  .left h1 {
+    font-size: 35px;
+  }
+
+  .left {
+    gap: 24px; /* Changed from 1.5rem to 24px */
+  }
+
+  .left p {
+    font-size: 13px;
+  }
+
+  .companies {
+    bottom: -21%;
+  }
+}
+
+.learn-more-button {
+  padding: 16px;
+  width: 30%;
+  border: none;
+  outline: none;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.learn-more-button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.learn-more-button:hover {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.learn-more-button:hover a {
+  color: black;
+}
+
+@media screen and (max-width: 1085px) {
+  .companies img {
+    width: 20%;
+  }
+
+  .companies {
+    bottom: -25%;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .companies img {
+    width: 19%;
+  }
+
+  .companies {
+    bottom: -20%;
+  }
+}

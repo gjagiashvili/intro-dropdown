@@ -1,0 +1,142 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  margin: auto;
+  position: relative;
+}
+
+.three-lines-icon {
+  display: none;
+}
+
+.main {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+}
+
+.main ul {
+  display: flex;
+  gap: 48px;
+}
+
+.main ul li {
+  list-style: none;
+  color: gray;
+  font-size: 16px;
+}
+
+.main ul li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.main ul li:hover a {
+  color: black;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.login:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.register {
+  padding: 18px 36px;
+  border: 1px solid gray;
+  border-radius: 15px;
+}
+
+.register:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.login,
+.register {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: gray;
+}
+
+@media screen and (max-width: 887px) {
+  .main {
+    gap: 32px;
+  }
+  .buttons {
+    gap: 32px;
+  }
+  .main ul {
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 827px) {
+  .login,
+  .register {
+    font-size: 14px;
+  }
+  .main {
+    gap: 16px;
+  }
+  .main ul {
+    gap: 16px;
+  }
+  .main ul li {
+    font-size: 14px;
+  }
+  .buttons {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .register {
+    margin: auto;
+    padding: 18px 144px;
+  }
+  .buttons {
+    display: none;
+  }
+  .main ul {
+    display: none;
+  }
+  .three-lines-icon {
+    display: block;
+  }
+  .features,
+  .company {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+
+.features,
+.company {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.features p:hover,
+.company p:hover {
+  color: black;
+}

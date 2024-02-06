@@ -1,0 +1,39 @@
+.features-drop {
+  position: absolute;
+  top: 77%;
+  left: 8%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0px 10px 50px -3px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.features-drop li {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.features-drop li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.features-drop li img {
+  width: 12%;
+}
+
+@media screen and (max-width: 768px) {
+  .features-drop {
+    position: static;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}

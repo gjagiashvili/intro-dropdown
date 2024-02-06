@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .overflow {
+    position: relative;
+  }
+
+  .overflow::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 8%, 0.6);
+  }
+}
+
+.container {
+  margin: auto;
+  max-width: 1440px;
+}

@@ -1,0 +1,110 @@
+.register {
+  padding: 12px 24px;
+  border: 1px solid gray;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 355px) {
+  .register {
+    margin: auto;
+    padding: 12px 48px;
+  }
+}
+
+@media screen and (max-width: 295px) {
+  .register {
+    margin: auto;
+    padding: 12px 32px;
+  }
+}
+
+.register:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.login,
+.register {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: gray;
+}
+
+@media screen and (max-width: 955px) {
+  .left h1 {
+    font-size: 45px;
+  }
+
+  .left {
+    gap: 40px;
+  }
+  .left p {
+    font-size: 16px;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+
+  .mobile {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    padding: 24px;
+    width: 70vw;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    right: 0%;
+    align-items: start;
+  }
+
+  .close {
+    position: relative;
+    left: 80%;
+  }
+
+  .mob-menu {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+  }
+
+  .mob-menu li {
+    list-style: none;
+    color: gray;
+  }
+
+  .mob-menu a {
+    text-decoration: none;
+    color: gray;
+  }
+
+  .mob-menu a:hover {
+    color: black;
+    cursor: pointer;
+  }
+
+  .mobile-yes {
+    display: grid;
+    align-items: center;
+    margin: 16px auto;
+  }
+
+  .features-mob,
+  .company-mob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+}
